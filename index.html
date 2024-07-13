@@ -83,7 +83,7 @@
       >
         <!-- Skills -->
         <div
-          class="w-96 md:w-full md:col-start-2 rounded border-2 border-slate-500 rounded h-full"
+          class="w-96 md:w-full md:col-start-2 rounded border-2 border-slate-500 h-full"
         >
           <h2
             class="flex items-center justify-center text-xl font-semibold text-center h-12 bg-gray-800 text-gray-100"
@@ -100,9 +100,7 @@
           </div>
         </div>
         <!-- Tools -->
-        <div
-          class="w-96 md:w-full rounded border-2 border-slate-500 rounded h-full"
-        >
+        <div class="w-96 md:w-full rounded border-2 border-slate-500 h-full">
           <h2
             class="flex items-center justify-center text-xl font-semibold text-center h-12 bg-gray-800 text-gray-100"
           >
@@ -129,7 +127,7 @@
         </div>
         <!-- Projects -->
         <div
-          class="w-96 md:w-full flex flex-col rounded border-2 border-slate-500 rounded h-full"
+          class="w-96 md:w-full flex flex-col rounded border-2 border-slate-500 h-full"
         >
           <h2
             class="flex items-center justify-center text-xl font-semibold text-center h-12 bg-gray-800 text-gray-100"
@@ -155,19 +153,19 @@
     </footer>
 
     <script>
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          var menu = document.getElementById("mobile-menu");
-          if (menu.classList.contains("hidden")) {
-            menu.classList.remove("hidden");
-          } else {
-            menu.classList.add("hidden");
-          }
-        });
+      (function () {
+        // adding handler for mobile menu
+        document
+          .getElementById("mobile-menu-button")
+          .addEventListener("click", function () {
+            var menu = document.getElementById("mobile-menu");
+            if (menu.classList.contains("hidden")) {
+              menu.classList.remove("hidden");
+            } else {
+              menu.classList.add("hidden");
+            }
+          });
+      })();
     </script>
   </body>
 </html>
-
-<!-- Buildings With Blue Light
-, Photo in the background by Reynaldo #brigworkz Brigantty: https://www.pexels.com/photo/buildings-with-blue-light-747101/ -->
