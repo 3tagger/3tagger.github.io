@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>
+      3tagger | Andri Winata | Software Engineer | Technical Trainer
+    </title>
+  </head>
+  <body class="text-gray-800 bg-gray-100 flex flex-col">
+    <!-- header -->
+    <nav class="bg-gray-800 text-gray-100">
+      <!-- Desktop menu -->
+      <div class="hidden md:flex justify-between items-center h-16 px-8">
+        <a href="#" class="text-xl font-bold">3tagger</a>
+        <!-- Desktop menu items -->
+        <div class="flex h-full">
+          <a
+            href="#"
+            class="flex px-6 items-center h-full text-md font-medium hover:bg-gray-500 hover:cursor-pointer"
+            >Home</a
+          >
+        </div>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="flex md:hidden justify-between items-center h-16 px-8">
+        <a href="#" class="text-xl font-bold">3tagger</a>
+        <button id="mobile-menu-button" class="text-gray-100">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden border-t-2 border-gray-100">
+        <a
+          href="#"
+          class="block px-3 py-2 text-base text-center font-medium hover:bg-slate-500 hover:cursor-pointer"
+          >Home</a
+        >
+      </div>
+    </nav>
+    <!-- main content -->
+    <section class="min-h-screen bg-gray-100 mt-2 mb-4">
+      <!-- Introduction -->
+      <div class="grid grid-cols-6 py-4">
+        <h1 class="col-start-2 col-span-4 text-center text-2xl font-bold">
+          Andri Winata
+        </h1>
+        <div class="col-start-2 col-span-4 text-center">
+          <p class="text-xl">Hi there! 👋</p>
+          <p class="text-xl">
+            My name is Andri Winata. I am an experienced software engineer with
+            more than 5 years of experience. I am also passionate about learning
+            and teaching software engineering.
+          </p>
+        </div>
+      </div>
+      <!-- Skillset and Projects -->
+      <div
+        class="flex flex-col justify-center items-center md:grid md:grid-cols-5 grid-cols-1 gap-4 pb-4"
+      >
+        <div
+          class="md:col-start-2 col-span-3 flex items-center justify-center text-2xl font-semibold text-center md:min-h-96 min-h-56 border-2 border-slate-500 rounded md:w-full w-96"
+        >
+          <p class="font-bold">🛠️ COMING SOON 🚧</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center md:grid md:grid-cols-5 grid-cols-1 gap-4"
+      >
+        <!-- Skills -->
+        <div
+          class="w-96 md:w-full md:col-start-2 rounded border-2 border-slate-500 rounded h-full"
+        >
+          <h2
+            class="flex items-center justify-center text-xl font-semibold text-center h-12 bg-gray-800 text-gray-100"
+          >
+            Skills
+          </h2>
+          <div class="px-4 py-2">
+            <ul class="pl-4 list-disc">
+              <li>🌐 API Development</li>
+              <li>🛢 Database Design and Optimization</li>
+              <li>☁️ AWS Deployment</li>
+              <li>🎯 Technical Training</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div
+          class="w-96 md:w-full rounded border-2 border-slate-500 rounded h-full"
+        >
+          <h2
+            class="flex items-center justify-center text-xl font-semibold text-center h-12 bg-gray-800 text-gray-100"
+          >
+            Tools
+          </h2>
+          <div class="px-4 py-2">
+            <div class="mb-2">
+              <h3 class="text-lg font-semibold">Programming Languages</h3>
+              <ul class="pl-4 list-disc">
+                <li>🦫 Go</li>
+                <li>📜 PHP</li>
+                <li>☕ Java</li>
+                <li>🐍 Python</li>
+              </ul>
+            </div>
+            <div class="mb-2">
+              <h3 class="text-lg font-semibold">Other Tools</h3>
+              <ul class="pl-4 list-disc">
+                <li>🔄 Git</li>
+                <li>🐳 Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Projects -->
+        <div
+          class="w-96 md:w-full flex flex-col rounded border-2 border-slate-500 rounded h-full"
+        >
+          <h2
+            class="flex items-center justify-center text-xl font-semibold text-center h-12 bg-gray-800 text-gray-100"
+          >
+            Projects
+          </h2>
+          <div class="flex flex-grow justify-center items-center min-h-32">
+            <p class="font-bold">🛠️ COMING SOON 🚧</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-800 text-gray-100">
+      <div class="min-h-16 flex justify-center items-center">
+        Contact me via:
+        <a
+          class="hover:text-gray-200 hover:bg-gray-700 hover:cursor-pointer px-2"
+          href="https://www.linkedin.com/in/andri-winata-40198812b/"
+          >Linkedin</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("mobile-menu");
+          if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+          } else {
+            menu.classList.add("hidden");
+          }
+        });
+    </script>
+  </body>
+</html>
+
+<!-- Buildings With Blue Light
+, Photo in the background by Reynaldo #brigworkz Brigantty: https://www.pexels.com/photo/buildings-with-blue-light-747101/ -->
