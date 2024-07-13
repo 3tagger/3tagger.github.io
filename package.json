@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "tailwindcss": "^3.4.4"
-  },
-  "scripts": {
-    "tailwind-build": "pnpx tailwindcss build ./src/css/index.css -o ./public/css/index.css --minify",
-    "tailwind-watch": "pnpx tailwindcss -i ./src/css/index.css -o ./public/css/index.css --watch"
-  }
-}
